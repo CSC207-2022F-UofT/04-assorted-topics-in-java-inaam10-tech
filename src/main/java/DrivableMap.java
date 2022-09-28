@@ -32,7 +32,7 @@ class DrivableMap {
     public boolean addDrivable(String id, Drivable d) {
 
         if (!drivable_map.containsKey(id)){
-            drivable_map.putIfAbsent(id, d);
+            drivable_map.put(id, d);
             return true;
         }
         return false;
